@@ -18,8 +18,6 @@ Q2: Two-Layer Neural Network
 
 The notebook two_layer_net.ipynb will walk you through the implementation of a two-layer neural network classifier. 
 
-
-### Extra (optional for extra practice):
 * k-Nearest Neighbor classifier
 
 The notebook knn.ipynb will walk you through implementing the kNN classifier.
