@@ -1,66 +1,45 @@
-# Deep Learning Methods for Medical Visualization – Labs
+## Goals
 
-This repository contains all lab material for the course **Deep Learning Methods for Medical Visualization**.  
-The labs guide you from basic supervised learning to advanced deep learning pipelines for medical image analysis.
+In this assignment you will practice putting together a simple image classification pipeline based on the k-Nearest Neighbor or the Softmax classifier. The goals of this assignment are as follows:
 
-## Labs overview
 
-### Lab 1 – Supervised Learning & Medical Image Analysis
+Understand basic neural network architecture.
+Understand the basic Image Classification pipeline and the data-driven approach (train/predict stages).
+Understand the train/val/test splits and the use of validation data for hyperparameter tuning.
+Develop proficiency in writing efficient vectorized code with numpy.
+Implement and apply a Two layer neural network classifier.
 
-- Review supervised learning concepts (training, validation, test, overfitting)
-- Work with simple classification or regression examples in Python
-- Connect machine learning tasks to typical medical imaging problems  
-  (e.g. lesion detection, organ classification, disease prediction)
 
-### Lab 2 – ANN and DNN Fundamentals
+Q1: Simple neural network example
 
-- Implement a multilayer perceptron from scratch or with TensorFlow/Keras
-- Use common activation functions and loss functions
-- Train with gradient descent–based optimizers and monitor training curves
-- Study underfitting/overfitting and regularization on small image datasets
+Go through the notebook and complete the exercises
 
-### Lab 3 – CNNs for Medical Images
+Q2: Two-Layer Neural Network
 
-- Understand convolution, filters, padding and pooling
-- Build and train a basic CNN for 2D medical images  
-  (e.g. slices from MRI/CT/X-ray)
-- Compare CNN performance to fully connected networks on the same task
-- Inspect learned feature maps and discuss their relation to image patterns
+The notebook two_layer_net.ipynb will walk you through the implementation of a two-layer neural network classifier. 
 
-### Lab 4 – Medical Image Segmentation with CNN (U-Net)
 
-- Implement or reuse a U-Net-style architecture in TensorFlow
-- Prepare image–mask pairs, patching and resizing for segmentation
-- Use segmentation loss functions (e.g. cross-entropy, Dice loss)
-- Evaluate with Dice score / IoU and visualize predicted masks
+### Extra (optional for extra practice):
+* k-Nearest Neighbor classifier
 
-### Lab 5 – Medical Image Classification with CNN
+The notebook knn.ipynb will walk you through implementing the kNN classifier.
 
-- Train a deeper CNN for disease or tissue classification
-- Apply data preprocessing and augmentation tailored to medical images
-- Use metrics such as accuracy, sensitivity, specificity, ROC and AUC
-- Discuss class imbalance and strategies to handle it
+* Implement a Softmax classifier (Optional)
 
-### Lab 6 – RNNs for Medical Image Analysis
+The notebook softmax.ipynb will walk you through implementing the Softmax classifier.
 
-- Introduce sequence modelling (RNN, LSTM, GRU) for medical data
-- Work with temporal or ordered data  
-  (e.g. image sequences, time series, reports)
-- Build an RNN model in TensorFlow and connect it to a clinical task
-- Evaluate and compare to non-sequential baselines
+### What to hand in:
+* Code on Github
+* Short report answering questions from the code (hand-written or computer-written)
+* Hand-written derivations for the implementations of the: Affine-forward, Affine-backward, ReLU forward, ReLU-backward.
 
-### Lab 7 – Transfer Learning and Deep Features
 
-- Use pre-trained CNNs (e.g. ImageNet models) for medical image classification
-- Perform feature extraction vs fine-tuning
-- Analyze training speed, performance and data requirements
-- Export deep features and use them in classical ML models  
-  (e.g. SVM, Random Forest)
 
-### Lab 8 – Interpretability & Recent Deep Learning Methods
 
-- Apply interpretation and visualization techniques  
-  (e.g. saliency maps, Grad-CAM, feature visualization)
-- Explore recent architectures or methods for medical image analysis
-- Critically evaluate model performance, robustness and clinical relevance
-- Summarize findings in a short written or presentation-based report
+## BONUS points
+At the lab session after the hand-in of this Lab, you have a chance to get up to **2** bonus points for presenting a part of the solution. Specifically:
+* Simple neural network notebook
+* Two-layer-net notebook
+* Math derivations of forward/back prop 
+
+Each presentation will be approximately 5-10 minutes and consist of you going through your solution together as a group and answering any clarifying questions. 
